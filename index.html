@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Md.Abu Bakkar Siddik">
+    <meta name="description" content="This page is built with the basic elements of 
+    Tailwind.">
+    <title>Petroil</title>
+    <link rel="icon" href="images/short-icon.webp" type="image/x-icon">
+
+    <!-- google fonts link start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- google fonts link end -->
+
+    <!-- fontawesome start -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- fontawesome end -->
+
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="images/short-icon.webp" sizes="72x72">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="images/short-icon.webp" sizes="114x114">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="images/short-icon.webp" sizes="144x144">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="images/short-icon.webp">
+
+    <!-- tailwindcss start -->
+    <script src="./js/tailwindcss.js"></script>
+    <script src="./js/tailwind.config.js"></script>
+    <!-- tailwindcss end -->
+</head>
+
+<body>
+    <!--***************************
+        Header part end
+    ****************************-->
+    <header class="bg-theme-black py-3 border-b-2 border-theme-yellow border-solid">
+        <div class="w-8/12 flex mx-auto">
+            <div class="w-6/12 flex">
+                <div
+                    class="text-white flex items-center pr-9 relative after:content-[''] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-theme-headafter">
+                    <i class="text-lg fa-regular fa-envelope"></i>
+                    <a class="text-xs pl-1.5 font-poppins font-normal"
+                        href="mailto:mail@yourcompany.com">mail@yourcompany.com</a>
+                </div>
+                <div class="text-white flex items-center pl-9">
+                    <i class="text-lg fa-solid fa-phone"></i>
+                    <a class="text-xs pl-1.5 font-poppins font-normal" href="tel:896 120 5889">+896 120 5889 (Toll
+                        free)</a>
+                </div>
+            </div>
+            <div class="w-6/12 flex justify-end gap-x-6">
+                <a class="text-white text-lg" href="https://www.facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a class="text-white text-lg" href="https://twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a class="text-white text-lg" href="https://www.linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a class="text-white text-lg" href="https://www.instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!--***************************
+        Header part end
+    ****************************-->
+
+    <!--***************************
+        Navber part start
+    ****************************-->
+    <nav class="bg-theme-red py-6">
+        <div class="w-8/12 flex mx-auto">
+            <div class="w-2/12">
+                <picture>
+                    <img src="./images/logo.webp" alt="logo" loading="lazy">
+                </picture>
+            </div>
+            <div class="w-10/12 flex justify-end items-center font-poppins font-medium text-base text-white">
+                <div>
+                    <ul class="flex capitalize  gap-x-10">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">gallery</a></li>
+                        <li><a href="#">blog</a></li>
+                    </ul>
+                </div>
+                <div class="ml-12">
+                    <button class="border-2 border-white border-solid uppercase py-2 px-5">contact</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--***************************
+        Navber part end
+    ****************************-->
+
+    <!--***************************
+        Banner part start
+    ****************************-->
+    <section
+        class="bg-banner bg-cover py-52 z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
+        <div class="w-8/12 mx-auto">
+            <h1 class="text-white font-poppins font-bold text-[40px] w-[535px]">We exist since 1975 on the oil and
+                gas industry.</h1>
+            <button
+                class="bg-red-600 font-poppins text-white font-medium uppercase text-base py-2 px-7 mt-8 mx-auto">Learn
+                More</button>
+            <i class="text-white text-3xl absolute left-10 top-2/4 translate-y-[-50%] fa-solid fa-arrow-left"></i>
+            <i class="text-white text-3xl absolute right-10 top-2/4 translate-y-[-50%] fa-solid fa-arrow-right"></i>
+        </div>
+    </section>
+    <!--***************************
+        Banner part end
+    ****************************-->
+</body>
+
+</html>
