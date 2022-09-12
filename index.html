@@ -33,31 +33,32 @@
         Header part end
     ****************************-->
     <header class="bg-theme-black py-3 border-b-2 border-theme-yellow border-solid">
-        <div class="w-8/12 flex mx-auto">
-            <div class="w-6/12 flex">
+        <div class="md:w-8/12 flex flex-col gap-y-1 md:gap-y-0 md:flex-row md:mx-auto">
+            <div class="w-full md:w-6/12 flex gap-y-1 md:gap-y-0 items-center md:items-start flex-col md:flex-row">
                 <div
-                    class="text-white flex items-center pr-9 relative after:content-[''] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-theme-headafter">
-                    <i class="text-lg fa-regular fa-envelope"></i>
-                    <a class="text-xs pl-1.5 font-poppins font-normal"
+                    class="text-white flex items-center md:pr-9 md:relative md:after:content-[''] md:after:absolute md:after:top-0 md:after:right-0 md:after:w-px md:after:h-full md:after:bg-theme-headafter ">
+                    <i class="text-base md:text-lg fa-regular fa-envelope"></i>
+                    <a class="text-[11px] md:text-xs pl-1.5 font-poppins font-normal"
                         href="mailto:mail@yourcompany.com">mail@yourcompany.com</a>
                 </div>
-                <div class="text-white flex items-center pl-9">
-                    <i class="text-lg fa-solid fa-phone"></i>
-                    <a class="text-xs pl-1.5 font-poppins font-normal" href="tel:896 120 5889">+896 120 5889 (Toll
+                <div class="text-white flex items-center md:pl-9 ">
+                    <i class="text-base md:text-lg fa-solid fa-phone"></i>
+                    <a class="text-[11px] md:text-xs pl-1.5 font-poppins font-normal" href="tel:896 120 5889">+896 120
+                        5889 (Toll
                         free)</a>
                 </div>
             </div>
-            <div class="w-6/12 flex justify-end gap-x-6">
-                <a class="text-white text-lg" href="https://www.facebook.com" target="_blank">
+            <div class="w-full md:w-6/12 flex justify-center md:justify-end gap-x-5 md:gap-x-6">
+                <a class="text-white text-base md:text-lg" href="https://www.facebook.com" target="_blank">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a class="text-white text-lg" href="https://twitter.com" target="_blank">
+                <a class="text-white text-base md:text-lg" href="https://twitter.com" target="_blank">
                     <i class="fa-brands fa-twitter"></i>
                 </a>
-                <a class="text-white text-lg" href="https://www.linkedin.com" target="_blank">
+                <a class="text-white text-base md:text-lg" href="https://www.linkedin.com" target="_blank">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a class="text-white text-lg" href="https://www.instagram.com" target="_blank">
+                <a class="text-white text-base md:text-lg" href="https://www.instagram.com" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
@@ -70,13 +71,14 @@
         Navber part start
     ****************************-->
     <nav class="bg-theme-red py-6">
-        <div class="w-8/12 flex mx-auto">
-            <div class="w-2/12">
+        <div class="md:w-8/12 flex justify-between md:justify-start mx-auto px-3 md:px-0">
+            <div class="w-[40%] md:w-2/12">
                 <picture>
                     <img src="./images/logo.webp" alt="logo" loading="lazy">
                 </picture>
             </div>
-            <div class="w-10/12 flex justify-end items-center font-poppins font-medium text-base text-white">
+            <button class="w-[10%] text-xl text-white md:hidden block"><i class="fa-solid fa-bars"></i></button>
+            <div class="w-10/12 hidden md:flex justify-end items-center font-poppins font-medium text-base text-white">
                 <div>
                     <ul class="flex capitalize  gap-x-10">
                         <li><a href="#">home</a></li>
@@ -99,15 +101,19 @@
         Banner part start
     ****************************-->
     <section
-        class="bg-banner bg-cover py-52 z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
-        <div class="w-8/12 mx-auto">
-            <h1 class="text-white font-poppins font-bold text-[40px] w-[535px]">We exist since 1975 on the oil and
+        class="bg-banner bg-cover py-20 md:py-52 z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
+        <div class="w-full md:w-8/12 px-3 md:px-0 md:mx-auto">
+            <h1
+                class="text-white font-poppins text-center md:text-left font-bold text-[21px] md:text-[40px] md:w-[535px]">
+                We exist since 1975 on the oil and
                 gas industry.</h1>
             <button
-                class="bg-red-600 font-poppins text-white font-medium uppercase text-sm py-2 px-7 mt-8 mx-auto">Learn
+                class="bg-red-600 font-poppins text-white mx-auto font-medium uppercase md:text-sm text-xs block md:inline-block  py-2 px-5 md:px-7 mt-6 md:mt-8">Learn
                 More</button>
-            <i class="text-white text-3xl absolute left-10 top-2/4 translate-y-[-50%] fa-solid fa-arrow-left"></i>
-            <i class="text-white text-3xl absolute right-10 top-2/4 translate-y-[-50%] fa-solid fa-arrow-right"></i>
+            <i
+                class="text-white text-3xl hidden md:block absolute left-10 top-2/4 translate-y-[-50%] fa-solid fa-arrow-left"></i>
+            <i
+                class="text-white text-3xl hidden md:block absolute right-10 top-2/4 translate-y-[-50%] fa-solid fa-arrow-right"></i>
         </div>
     </section>
     <!--***************************
@@ -116,12 +122,14 @@
     <!--***************************
         Welcome part start
     ****************************-->
-    <section class="w-8/12 flex items-center justify-between py-14 mx-auto">
-        <div class="w-1/5">
-            <h2 class="text-black font-poppins font-bold text-[29px]">The biggest supplier on the country</h2>
+    <section
+        class="md:w-8/12 flex flex-col gap-y-3 md:gap-y-0 md:flex-row items-center justify-between md:py-14 py-10 mx-auto px-3 md:px-0">
+        <div class="w-full md:w-1/5">
+            <h2 class="text-black font-poppins font-bold text-[18px] md:text-[29px]">The biggest supplier on the country
+            </h2>
         </div>
-        <div class="w-3/5">
-            <p class="text-theme-content font-poppins font-medium text-sm leading-6">
+        <div class="w-full md:w-3/5">
+            <p class="text-theme-content font-poppins font-medium text-xs md:text-sm md:leading-6 leading-5">
                 It is a long established fact that a reader will be distracted by the readable content of a page when
                 looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.
             </p>
@@ -133,23 +141,23 @@
     <!--***************************
         Image slider part start
     ****************************-->
-    <section class="py-6 flex justify-between">
-        <div class="w-[23.5%]">
+    <section class="md:py-6 py-2 flex flex-wrap gap-y-3 md:gap-y-0 md:flex-nowrap justify-between">
+        <div class="w-[48%] md:w-[23.5%]">
             <picture>
                 <img class="w-full" src="./images/slider-1.webp" alt="slider-1" loading="lazy">
             </picture>
         </div>
-        <div class="w-[23.5%]">
+        <div class="w-[48%] md:w-[23.5%]">
             <picture>
                 <img class="w-full" src="./images/slider-2.webp" alt="slider-2" loading="lazy">
             </picture>
         </div>
-        <div class="w-[23.5%]">
+        <div class="w-[48%] md:w-[23.5%]">
             <picture>
                 <img class="w-full" src="./images/slider-3.webp" alt="slider-3" loading="lazy">
             </picture>
         </div>
-        <div class="w-[23.5%]">
+        <div class="w-[48%] md:w-[23.5%]">
             <picture>
                 <img class="w-full" src="./images/slider-4.webp" alt="slider-4" loading="lazy">
             </picture>
@@ -161,32 +169,38 @@
     <!--***************************
         Service part start
     ****************************-->
-    <section class="flex flex-wrap">
-        <div class="w-3/6 py-20 pl-[225px]">
-            <h2 class="text-black font-poppins font-bold text-[29px]">Our Services</h2>
-            <p class="text-theme-content w-96 font-poppins font-medium text-sm leading-6">It is a long established fact
+    <section class="flex flex-col md:flex-row flex-wrap">
+        <div class="w-full md:w-3/6 py-16 md:py-20 md:pl-[225px] px-3 md:px-0">
+            <h2 class="text-black font-poppins text-center md:text-left font-bold text-[18px] md:text-[29px]">Our
+                Services</h2>
+            <p
+                class="text-theme-content mt-3 md:mt-0 md:w-96 font-poppins text-center md:text-left font-medium text-xs md:text-sm md:leading-6 leading-5">
+                It is a long established fact
                 that
                 a reader will be distracted by the readable content of a page when looking at its layout.</p>
         </div>
         <div
-            class="w-3/6 bg-service-1 py-20 px-16 bg-cover z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
-            <h3 class="font-poppins text-white font-bold text-[23px]">Modern natural oil and gas refineries.</h3>
+            class="w-full md:w-3/6 bg-service-1 py-16 md:py-20 px-3 md:px-16 bg-cover z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
+            <h3 class="font-poppins text-white md:text-left text-center font-bold text-[18px] md:text-[23px]">Modern
+                natural oil and gas refineries.</h3>
             <button
-                class="bg-red-600 font-poppins text-white font-medium capitalize text-sm py-2 px-7 mt-5 mx-auto">Learn
+                class="bg-red-600 font-poppins text-white font-medium capitalize py-2 px-5 md:px-7 mt-5 mx-auto md:text-sm text-xs block md:inline-block">Learn
                 More</button>
         </div>
         <div
-            class="w-3/6 bg-service-2 py-20 px-16 bg-cover z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
-            <h3 class="font-poppins text-white font-bold text-[23px]">Supply of national industries.</h3>
+            class="w-full md:w-3/6 bg-service-2 py-16 md:py-20 px-3 md:px-16 bg-cover z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
+            <h3 class="font-poppins text-white md:text-left text-center text-[18px] font-bold md:text-[23px]">Supply of
+                national industries.</h3>
             <button
-                class="bg-red-600 font-poppins text-white font-medium capitalize text-sm py-2 px-7 mt-5 mx-auto">Learn
+                class="bg-red-600 font-poppins text-white font-medium capitalize md:text-sm text-xs py-2 px-5 md:px-7 mt-5 mx-auto block md:inline-block">Learn
                 More</button>
         </div>
         <div
-            class="w-3/6 bg-service-3 py-20 px-16 bg-cover z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
-            <h3 class="font-poppins text-white font-bold text-[23px]">National fuel distribution and supply.</h3>
+            class="w-full md:w-3/6 bg-service-3 md:py-20 py-16 px-3 md:px-16 bg-cover z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
+            <h3 class="font-poppins text-white font-bold md:text-left text-center text-[18px] md:text-[23px]">National
+                fuel distribution and supply.</h3>
             <button
-                class="bg-red-600 font-poppins text-white font-medium capitalize text-sm py-2 px-7 mt-5 mx-auto">Learn
+                class="bg-red-600 font-poppins text-white font-medium capitalize text-xs md:text-sm py-2 px-5 md:px-7 mt-5 mx-auto block md:inline-block">Learn
                 More</button>
         </div>
     </section>
@@ -196,14 +210,15 @@
     <!--***************************
         About part start
     ****************************-->
-    <section class="bg-theme-gray py-24">
-        <div class="w-8/12 flex mx-auto">
-            <div class="bg-theme-red w-[30%] py-16 px-12">
-                <h3 class="font-poppins w-40 text-white font-bold text-[23px]">Learn more about our company</h3>
+    <section class="bg-theme-gray py-16 md:py-24">
+        <div class="md:w-8/12 flex md:flex-row flex-col mx-auto px-3 md:px-0">
+            <div class="bg-theme-red w-full md:w-[30%] md:py-16 py-10 px-6 md:px-12">
+                <h3 class="font-poppins md:w-40 text-white font-bold text-[18px] md:text-[23px]">Learn more about our
+                    company</h3>
             </div>
-            <div class="bg-about bg-cover relative w-[70%]">
+            <div class="bg-about bg-cover py-24 md:py-0 relative md:w-[70%]">
                 <button
-                    class="bg-white font-poppins absolute left-2/4 translate-x-[-50%] top-2/4 translate-y-[-50%] text-theme-red font-medium capitalize text-sm py-2 px-7">Learn
+                    class="bg-white font-poppins absolute left-2/4 translate-x-[-50%] top-2/4 translate-y-[-50%] text-theme-red font-medium capitalize text-xs md:text-sm py-2 px-5 md:px-7">Learn
                     More</button>
             </div>
         </div>
@@ -214,26 +229,30 @@
     <!--***************************
         Client part start
     ****************************-->
-    <section class="py-14">
-        <div class="w-8/12 mx-auto flex justify-between">
-            <div class="w-[23.5%]">
+    <section class="md:py-14 py-10">
+        <div class="md:w-8/12 px-3 md:px-0 mx-auto flex flex-col gap-y-1 md:gap-y-0 md:flex-row md:justify-between">
+            <div class="w-full md:w-[23.5%]">
                 <picture>
-                    <img class="w-full" src="./images/client-1.webp" alt="client-1" loading="lazy">
+                    <img class="w-[50%] mx-auto md:mx-0 md:w-full" src="./images/client-1.webp" alt="client-1"
+                        loading="lazy">
                 </picture>
             </div>
-            <div class="w-[23.5%]">
+            <div class="w-full md:w-[23.5%]">
                 <picture>
-                    <img class="w-full" src="./images/client-2.webp" alt="client-2" loading="lazy">
+                    <img class="w-[50%] mx-auto md:mx-0 md:w-full" src="./images/client-2.webp" alt="client-2"
+                        loading="lazy">
                 </picture>
             </div>
-            <div class="w-[23.5%]">
+            <div class="w-full md:w-[23.5%]">
                 <picture>
-                    <img class="w-full" src="./images/client-3.webp" alt="client-3" loading="lazy">
+                    <img class="md:w-full w-[50%] mx-auto md:mx-0" src="./images/client-3.webp" alt="client-3"
+                        loading="lazy">
                 </picture>
             </div>
-            <div class="w-[23.5%]">
+            <div class="w-full md:w-[23.5%]">
                 <picture>
-                    <img class="w-full" src="./images/client-4.webp" alt="client-4" loading="lazy">
+                    <img class="md:w-full w-[50%] mx-auto md:mx-0" src="./images/client-4.webp" alt="client-4"
+                        loading="lazy">
                 </picture>
             </div>
         </div>
@@ -244,39 +263,45 @@
     <!--***************************
         Blog part start
     ****************************-->
-    <section class="bg-theme-gray py-24">
-        <div class="w-8/12 mx-auto">
-            <div class="flex justify-between flex-wrap">
+    <section class="bg-theme-gray py-16 md:py-24">
+        <div class="md:w-8/12 mx-auto px-3 md:px-0">
+            <div class="flex flex-col md:flex-row gap-y-4 md:gap-y-0 md:justify-between flex-wrap">
                 <div
-                    class="bg-blog-1 bg-cover w-[31%] px-11 pt-16 pb-14 z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
-                    <h4 class="font-poppins w-52 text-white font-bold text-[20px]">lorem ipsum dolor sit amet
+                    class="bg-blog-1 bg-cover md:w-[31%] md:px-11 px-9 md:pt-16 pt-12 pb-12 md:pb-14 z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
+                    <h4
+                        class="font-poppins text-center md:text-left md:w-52 text-white font-bold text-[17px] md:text-[20px]">
+                        lorem ipsum dolor sit amet
                         consectetur
                         adipiscing elit sed do eiusmod.</h4>
                     <button
-                        class="bg-theme-light font-poppins text-white border border-white border-solid mt-10 font-medium capitalize text-xs py-2 px-5">Learn
+                        class="bg-theme-light font-poppins text-white border border-white border-solid md:mt-10 mt-7 block md:inline-block mx-auto md:mx-0 font-medium capitalize text-xs py-2 px-4 md:px-5">Learn
                         More</button>
                 </div>
                 <div
-                    class="bg-blog-2 bg-cover w-[31%] px-11 pt-16 pb-14 z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
-                    <h4 class="font-poppins w-52 text-white font-bold text-[20px]">lorem ipsum dolor sit amet
+                    class="bg-blog-2 bg-cover md:w-[31%] md:px-11 px-9 md:pt-16 pt-12 pb-12 md:pb-14 z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
+                    <h4
+                        class="font-poppins text-center md:text-left md:w-52 text-white font-bold text-[17px] md:text-[20px]">
+                        lorem ipsum dolor sit amet
                         consectetur
                         adipiscing elit sed do eiusmod.</h4>
                     <button
-                        class="bg-theme-light font-poppins text-white border border-white border-solid mt-10 font-medium capitalize text-xs py-2 px-5">Learn
+                        class="bg-theme-light font-poppins text-white border border-white border-solid md:mt-10 mt-7 block md:inline-block mx-auto md:mx-0 font-medium capitalize text-xs py-2 px-4 md:px-5">Learn
                         More</button>
                 </div>
                 <div
-                    class="bg-blog-3 bg-cover w-[31%] px-11 pt-16 pb-14 z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
-                    <h4 class="font-poppins w-52 text-white font-bold text-[20px]">lorem ipsum dolor sit amet
+                    class="bg-blog-3 bg-cover md:w-[31%] md:px-11 px-9 md:pt-16 pt-12 pb-12 md:pb-14 z-[1] relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:z-[-1] after:h-full after:bg-theme-overlay">
+                    <h4
+                        class="font-poppins text-center md:text-left md:w-52 text-white font-bold text-[17px] md:text-[20px]">
+                        lorem ipsum dolor sit amet
                         consectetur
                         adipiscing elit sed do eiusmod.</h4>
                     <button
-                        class="bg-theme-light font-poppins text-white border border-white border-solid mt-10 font-medium capitalize text-xs py-2 px-5">Learn
+                        class="bg-theme-light font-poppins text-white border border-white border-solid md:mt-10 mt-7 block md:inline-block mx-auto md:mx-0 font-medium capitalize text-xs py-2 px-4 md:px-5">Learn
                         More</button>
                 </div>
             </div>
             <button
-                class="text-black block text-end w-full font-poppins uppercase text-center font-bold text-sm mt-5">MORE
+                class="text-black block text-center md:text-end w-full font-poppins uppercase  md:font-bold font-semibold md:text-sm text-xs mt-5">MORE
                 FROM THE BLLOG <i class="fa-solid ml-[3px] fa-angle-right"></i> </button>
         </div>
     </section>
@@ -287,7 +312,10 @@
         Google map part start
     ****************************-->
     <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13209.393880542422!2d-118.36160912639981!3d34.13742584980196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2be49408aba81%3A0x595194446d9ece24!2sUniversal%20City%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1662903105915!5m2!1sen!2sbd" class="w-full h-[420px]" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13209.393880542422!2d-118.36160912639981!3d34.13742584980196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2be49408aba81%3A0x595194446d9ece24!2sUniversal%20City%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1662903105915!5m2!1sen!2sbd"
+            class="w-full md:h-[420px] h-[260px]" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!--***************************
         Google map part end
@@ -295,11 +323,12 @@
     <!--***************************
         Contact part start
     ****************************-->
-    <section class="bg-theme-red py-10 border-b-2 border-theme-yellow border-solid">
-        <div class="w-8/12 flex justify-between items-center mx-auto">
-            <h3 class="font-poppins text-white font-bold text-[23px]">Want to join as member branch in your area?</h3>
+    <section class="bg-theme-red py-8 md:py-10 px-3 md:px-0 border-b-2 border-theme-yellow border-solid">
+        <div class="md:w-8/12 flex flex-col md:flex-row md:justify-between md:items-center md:mx-auto">
+            <h3 class="font-poppins text-white text-center md:text-left font-bold text-[18px] md:text-[23px]">Want to
+                join as member branch in your area?</h3>
             <button
-                class="border-2 border-white font-poppins font-medium text-base text-white border-solid uppercase py-2 px-5">contact</button>
+                class="border md:border-2 border-white font-poppins font-medium text-xs md:text-base block md:inline-block mx-auto md:mx-0 text-white border-solid uppercase py-2 px-4 mt-5 md:mt-0 md:px-5">contact</button>
         </div>
     </section>
     <!--***************************
@@ -309,15 +338,15 @@
         Footer part start
     ****************************-->
     <footer>
-        <div class="bg-theme-blacklight text-white py-28">
-            <div class="w-8/12 flex justify-between mx-auto">
-                <div class="w-[28%]">
-                    <div class="w-[65%]">
+        <div class="bg-theme-blacklight text-white py-14 md:py-28">
+            <div class="md:w-8/12 flex flex-col px-3 md:px-0 md:flex-row md:justify-between md:mx-auto">
+                <div class="md:w-[28%]">
+                    <div class="w-[40%] md:w-[65%]">
                         <picture>
                             <img src="./images/logo.webp" alt="logo" loading="lazy">
                         </picture>
                     </div>
-                    <ul class="flex my-7 flex-col gap-y-1.5">
+                    <ul class="flex my-5 md:my-7 flex-col gap-y-1 md:gap-y-1.5">
                         <li class="flex items-center">
                             <i class="text-lg fa-regular fa-envelope"></i>
                             <a class="text-xs pl-1.5 font-poppins font-normal"
@@ -337,28 +366,28 @@
                         </li>
                     </ul>
                     <div class="flex gap-x-3">
-                        <a class="text-white bg-theme-red rounded-full inline-flex justify-center items-center h-9 w-9 text-lg"
+                        <a class="text-white bg-theme-red rounded-full inline-flex justify-center items-center md:h-9 md:w-9 h-8 w-8 text-sm md:text-lg"
                             href="https://www.facebook.com" target="_blank">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
-                        <a class="text-white bg-theme-red rounded-full inline-flex justify-center items-center h-9 w-9 text-lg"
+                        <a class="text-white bg-theme-red rounded-full inline-flex justify-center items-center md:h-9 md:w-9 h-8 w-8 text-sm md:text-lg"
                             href="https://twitter.com" target="_blank">
                             <i class="fa-brands fa-twitter"></i>
                         </a>
-                        <a class="text-white bg-theme-red rounded-full inline-flex justify-center items-center h-9 w-9 text-lg"
+                        <a class="text-white bg-theme-red rounded-full inline-flex justify-center items-center md:h-9 md:w-9 h-8 w-8 text-sm md:text-lg"
                             href="https://www.linkedin.com" target="_blank">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
-                        <a class="text-white bg-theme-red rounded-full inline-flex justify-center items-center h-9 w-9 text-lg"
+                        <a class="text-white bg-theme-red rounded-full inline-flex justify-center items-center md:h-9 md:w-9 h-8 w-8 text-sm md:text-lg"
                             href="https://www.instagram.com" target="_blank">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     </div>
                 </div>
-                <div class="w-[56%] flex justify-between pt-[26px]">
-                    <ul class="flex w-[15%] flex-col gap-y-1.5">
+                <div class="md:w-[56%] flex flex-col gap-y-5 md:gap-y-0 md:flex-row md:justify-between pt-[26px]">
+                    <ul class="flex w-[15%] flex-col md:gap-y-1.5">
                         <li>
-                            <h4 class="font-poppins pb-[12px] font-semibold text-sm">Company</h4>
+                            <h4 class="font-poppins pb-[5px] md:pb-[12px] font-semibold text-sm">Company</h4>
                         </li>
                         <li>
                             <a class="text-xs font-poppins font-normal" href="#">Home</a>
@@ -374,9 +403,9 @@
                         </li>
                     </ul>
                     <!-- <div class=""> -->
-                    <ul class="flex w-[25%] flex-col gap-y-1.5">
+                    <ul class="flex w-[25%] flex-col md:gap-y-1.5">
                         <li>
-                            <h4 class="font-poppins pb-[12px] font-semibold text-sm">Others</h4>
+                            <h4 class="font-poppins pb-[5px] md:pb-[12px] font-semibold text-sm">Others</h4>
                         </li>
                         <li>
                             <a class="text-xs font-poppins font-normal" href="#">Blog</a>
@@ -392,9 +421,9 @@
                         </li>
                     </ul>
                     <!-- </div> -->
-                    <ul class="flex w-[35%] flex-col gap-y-1.5">
+                    <ul class="flex w-[35%] flex-col md:gap-y-1.5">
                         <li>
-                            <h4 class="font-poppins pb-[12px] font-semibold text-sm">Certificate</h4>
+                            <h4 class="font-poppins pb-[5px] md:pb-[12px] font-semibold text-sm">Certificate</h4>
                         </li>
                         <li class="flex justify-start gap-x-2 mt-1.5">
                             <!-- Problem -->
@@ -410,9 +439,11 @@
                 </div>
             </div>
         </div>
-        <div class="bg-theme-graydark py-8">
-            <div class="w-8/12 mx-auto">
-                <p class="text-theme-content font-poppins text-sm font-medium">© Copyright 2022 by Alt Desain Studio – All right reserved.</p>
+        <div class="bg-theme-graydark py-6 md:py-8">
+            <div class="md:w-8/12 px-3 md:px-0 md:mx-auto">
+                <p class="text-theme-content text-center md:text-left font-poppins text-xs md:text-sm font-medium">©
+                    Copyright 2022 by Alt Desain Studio –
+                    All right reserved.</p>
             </div>
         </div>
     </footer>
